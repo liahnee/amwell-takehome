@@ -1,13 +1,44 @@
-.App {
-  text-align: center;
+:root {
+  --color-white-alpha: rgba(255, 255, 255, 0.2); 
+  --color-blue-alpha: rgba(52, 126, 217, 0.2);
+}
+/* body {
+  background-color: white;
+} */
+
+#root {
+  /* background: repeating-linear-gradient(
+    45deg,
+     var(--color-white-alpha) 0px,
+    transparent 30vmin
+  ); */
   height: 100vh;
+  width: 100vw;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
   font-family: 'Bebas Neue', cursive;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 800;
-  margin-top: 30vh;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 4em;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 #logo {
@@ -32,17 +63,41 @@ h1 {
   color: #61dafb;
 }
 
+.App-main {
+  width: 80vw;
+  justify-self: center;
+  box-shadow: 3px 3px 10px 5px grey;
+  padding: 1rem 0 1rem 0;
+}
+
 .App-main p {
   font-size: 5em;
   letter-spacing: 0.5rem;
+  margin-top: 0.5em;
 }
 
 @media (max-width: 800px) {
-
-  h1 {
-    font-size: 4em;
+  .App-main p {
+    font-size: 3em;
     font-weight: 800;
-    margin-top: 30vh;
+    letter-spacing: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 3em;
+    font-weight: 800;
+  }
+  
+  h2 {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+}
+@media (min-width: 800px) {
+
+  .App-main {
+    width: 800px;
   }
   
   .App-main p {

@@ -33,9 +33,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img id='logo' src={logo} alt="amwell logo"/>
-        <h1>Lowest Three Numbers</h1>
+        <h1>Amwell Take-home Assessment</h1>
       </header>
       <main className="App-main">
+        <h2>Lowest Three Numbers</h2>
         <p>
           [ {data[0]}, {data[1]}, {data[2]} ]
         </p>
