@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 800;
+  margin-top: 30vh;
+}
+
+#logo {
+  position: absolute; 
+  width: 3rem;
+  height: auto;
+  left: 1rem;
+  top: 1rem;
+  border-radius: 19%;
+}
+
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-main p {
+  font-size: 5em;
+  letter-spacing: 0.5rem;
+}
+
+@media (max-width: 800px) {
+
+  h1 {
+    font-size: 4em;
+    font-weight: 800;
+    margin-top: 30vh;
+  }
+  
+  .App-main p {
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+  }
+}
